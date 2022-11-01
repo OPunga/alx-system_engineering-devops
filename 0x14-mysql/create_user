@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+#creating a user
+
+echo "CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'projectcorrection280hbtn';\n
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost';\n
+FLUSH PRIVILEGES;\n" > cmd.sql
+sudo mysql < cmd.sql
